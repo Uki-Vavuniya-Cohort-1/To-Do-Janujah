@@ -1,5 +1,10 @@
 const Mongoose =require("mongoose");
 const schema = new Mongoose.Schema({
+  id: {
+    type: String,
+    require: true,
+    unique: true
+  },
   title: {
     type: String
   },
