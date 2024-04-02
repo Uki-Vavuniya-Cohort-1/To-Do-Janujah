@@ -1,4 +1,5 @@
 const Mongoose =require("mongoose");
+// const User = require("./Shcema/User.model.js");
 const schema = new Mongoose.Schema({
   id: {
     type: String,
@@ -9,7 +10,8 @@ const schema = new Mongoose.Schema({
     type: String
   },
   created_by: {
-    type: String
+    type: Mongoose.Schema.Types.ObjectId,
+    ref: 'User'
   },
   created_on: {
     type: Date

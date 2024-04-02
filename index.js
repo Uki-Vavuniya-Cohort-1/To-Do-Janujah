@@ -121,7 +121,52 @@ app.put('/User/update/:id', async (req, res) => {
   catch (error){
     res.status(400).send(error)
   }
- });
+ })
+
+//  app.get('/user/:name', async (req, res) => {
+//   try {
+//       const {name} = req.params.name;
+//       const notes = await User.find( created_note  ,req.body);
+
+//       if (notes.length > 0) {
+//           res.status(200).json(notes);
+//       } else {
+//           res.status(404).send('No notes found for the specified user.');
+//       }
+//   } catch (error) {
+//       res.status(500).send('Server error while fetching notes');
+//   }
+// });
 
 
-   
+// app.get('/user/:userid', async (req, res) => {
+//   try {
+//       const { userid } = req.params;
+//       const user = await User.find({ userid }, req.body );
+
+//       // if (!user) {
+//       //     return res.status(404).send('User not found');
+//       // }
+
+//       const names = await user.map(list => list.name);
+//       const note = await names.map( => .)
+
+//       res.status(200).json(note);
+//   } catch (error) {
+//       console.error('Error fetching notes:', error);
+//       res.status(500).send('Server error');
+//   }
+// });
+
+app.get('/user/:userid', async (req, res) => {
+  const note = ToDo.find({ created_by: User.userid })
+                   .populate('created_by') // This replaces the userId with // app.get('/user/:userid', async (req, res) => {
+
+        if (!User) {
+          res.status(500).send('Server error');
+
+        }
+      const json = JSON.stringify(note);
+      res.status(200).json(json)
+});
+

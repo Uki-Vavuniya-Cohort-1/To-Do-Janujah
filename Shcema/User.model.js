@@ -13,9 +13,10 @@ const schema = new Mongoose.Schema({
         type: String,
         required: true  
     },
-    created_note: {
-        type: Array
-    }
+    created_note: [{
+        type: Mongoose.Schema.Types.ObjectId,
+        ref: 'To-Do List'
+    }]
 
 });
 const Model = Mongoose.model('User', schema);
