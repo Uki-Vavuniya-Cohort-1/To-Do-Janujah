@@ -1,0 +1,90 @@
+ .form-control{
+    width: 450px;
+  }
+  .mb-3{
+    /* display: flex; */
+    padding: 10px;
+    
+  }
+  #btn2{
+    margin-left: 210px;
+    color: white;
+    border-color: aliceblue;
+  }
+  #btn2:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-color: black;
+  }
+  .form-label{
+    padding: 10px;
+    height: 10px;
+  }
+  .App2{
+    /* border: 1px solid black; */
+    width: 500px;
+    box-shadow: 4px 4px 8px rgba(1,1,1,1);
+    border-radius: 10px;
+  }
+  .dd{
+    width: 300px;
+    background-color: white;
+    height: 40px;
+  }
+  .nav-link{
+    color: black;
+  }
+  .App4{
+    display: flex;
+  }
+  .nav{
+    background-color: rgb(212, 194, 105);
+  }
+ #imagrieuhf{
+	object-fit: cover; 
+	object-position: left;
+ }
+ .bg-image-vertical {
+	position: relative;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: auto 100%;
+	}
+	
+	@media (min-width: 1025px) {
+	.h-custom-2 {
+	height: 100%;
+	}
+	}
+#hjsd{
+	color: #709085;
+}
+#ionsjq{
+	letter-spacing: 1px;
+}
+#alijdoi{
+	width: 23rem;
+	/* padding: 500px; */
+	margin-bottom: 100px;
+}
+.vh-100{
+	padding: 150px;
+}
+/* .form{ */
+  /* padding: 600px; */
+  /* margin-top: 120px; */
+  /* margin-left: 706px; */
+/* } */
+.form {
+  display: flex;        
+  justify-content: center;  
+  align-items: center;      
+  min-height: 100vh;
+  flex-direction: column; 
+  background-image: url('./img/bac.png'); 
+  background-size: cover; 
+  background-position: center; 
+  color: white;
+}
+
