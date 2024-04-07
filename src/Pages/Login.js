@@ -1,12 +1,11 @@
 import React from 'react';
-import Nav from '../components/Navbar'
 
 function Navbar() {
   return (
 
     <div>
-      <Nav />
-      <section class="vh-100">
+      
+      <section class="vh-100" id='vh-10'>
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm-6 text-black">
@@ -28,11 +27,11 @@ function Navbar() {
                   </div>
 
                   <div class="pt-1 mb-4">
-                    <button class="btn btn-info btn-lg btn-block" type="button">Login</button>
+                    <a href='/home'><button class="btn btn-info btn-lg btn-block" type="button">Login</button></a>
                   </div>
 
                   <p class="small mb-5 pb-lg-2"><a class="text-muted" href="#!">Forgot password?</a></p>
-                  <p>Don't have an account? <a href="/Create-Account" class="link-info">Register here</a></p>
+                  <p>Don't have an account? <a href="/Register" class="link-info">Register here</a></p>
 
                 </form>
 
@@ -40,7 +39,7 @@ function Navbar() {
 
             </div>
             <div class="col-sm-6 px-0 d-none d-sm-block">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img3.webp"
+              <img src="https://i.pinimg.com/564x/1f/a1/78/1fa178e2b6da31fe427bc755fedb7dcf.jpg"
                 alt="Login image" class="w-100 vh-100" id="imagrieuhf"></img>
             </div>
           </div>
