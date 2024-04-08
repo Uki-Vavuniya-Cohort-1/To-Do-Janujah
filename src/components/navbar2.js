@@ -5,7 +5,7 @@ function Navbar() {
         <div>
          <ul class="nav justify-content-end">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/"><i class="fa-solid fa-house" ></i></a>
+                <a class="nav-link active" aria-current="page" href="/home"><i class="fa-solid fa-house" ></i></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/note"><i class="fa-solid fa-note-sticky"></i></a>
